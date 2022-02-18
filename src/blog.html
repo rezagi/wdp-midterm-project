@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Reza Agi</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="dark:bg-gray-800 dark:text-slate-200">
+  <nav class="nav dark:bg-slate-800">
+      <div class="container flex justify-between mx-auto ">
+          <a href="index.html" class="logo">※</a>
+          <div class="flex justify-center mt-3">
+              <span class="text-gray-800">🔆</span>
+              <input type="checkbox" id="toggle" class="hidden">
+              <label for="toggle">
+                  <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-0.5 cursor-pointer">
+                      <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+                  </div>
+              </label>
+              <span>🌙</span>
+          </div>
+          <button class="relative px-8 logo" onclick="handleNavMenu()"> ≡
+          </button>
+      </div>
+  </nav>
+  <div id="navMenu" class="fixed z-20 left-0 top-0 w-screen h-screen bg-secondary items-center justify-center hidden">
+      <button class="absolute right-16 top-10" onclick="handleNavMenu()">
+          <img class="w-10"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png"
+              alt="">
+      </button>
+      <ul class="text-white text-center text-5xl font-light space-y-12 tracking-widest">
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="index.html">HOME</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="about.html">ABOUT</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="blog.html">BLOG</a></li>
+      </ul>
+  </div>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/blog1.png" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Tailwind</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white dark:font-bold">Tailwind CSS For Absolute Beginners</h1>
+              <p class="leading-relaxed mb-3 dark:text-slate-200 dark:font-extralight">Tailwind is a utility-first CSS framework. In contrast to other CSS
+                frameworks like Bootstrap or Materialize CSS it doesn't come with predefined components.</p>
+              <div class="flex items-center flex-wrap ">
+                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="https://medium.com/codingthesmartway-com-blog/tailwind-css-for-absolute-beginners-3e1b5e8fe1a1">Read
+                  More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>300
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>5
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/blog2.jpeg" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Machine Learning</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white dark:font-bold">12 Things I Learned During My First Year as
+                a Machine Learning Engineer</h1>
+              <p class="leading-relaxed mb-3 dark:text-slate-200 dark:font-extralight">Being your own biggest sceptic, the value in trying things which might not
+                work and why communication problems are harder than technical problems.</p>
+              <div class="flex items-center flex-wrap">
+                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="https://medium.com/towards-data-science/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195">Read
+                  More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>600
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>10
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/blog3.jpg" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">JavaScript</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white dark:font-bold">Add Keyboard Shortcuts to Your Web App</h1>
+              <p class="leading-relaxed mb-3 dark:text-slate-200 dark:font-extralight">You can trigger any DOM element with a keyboard shortcut key. This gonna
+                be an interesting article if you want to improve the accessibility of your web
+                app.</p>
+              <div class="flex items-center flex-wrap ">
+                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="https://medium.com/javascript-in-plain-english/add-keyboard-shortcuts-to-your-web-app-2f9e28d1ba81">Read
+                  More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>2.1K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>21
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/blog4.jpeg" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Web Design</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white dark:font-bold">5 Key Principles For A Modern Web Design
+              </h1>
+              <p class="leading-relaxed mb-3 dark:text-slate-200 dark:font-extralight">When we talk about web design, we are referring to the general look of a
+                website. It is the process of planning and building the elements of your website, from structure to
+                layout, including colors, fonts, and images.</p>
+              <div class="flex items-center flex-wrap ">
+                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="https://medium.com/@ahmedbelaid/5-key-principles-for-a-modern-web-design-bd7338a9f986">Read More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.1k
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>14
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/blog5.jpg" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">UI/UX</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white dark:font-bold">The Top 7 UX Design Trends for 2022</h1>
+              <p class="leading-relaxed mb-3 dark:text-slate-200 dark:font-extralight">New technologies and features change user expectations from a digital
+                product, like a website or an app. It also affects how they interact with it changes. As a result, UX
+                design standards also evolve.</p>
+              <div class="flex items-center flex-wrap ">
+                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="https://medium.com/ux-planet/the-top-7-ux-design-trends-for-2022-1c1ad67b2bdb">Read More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>562
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>16
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/blog6.png" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Artificial intelligence</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white dark:font-bold">Fundamental concepts of AI, machine
+                learning, and deep learning</h1>
+              <p class="leading-relaxed mb-3 dark:text-slate-200 dark:font-extralight">To understand how they connect to the discipline of data science, we will
+                first discuss the differences between three fundamental concepts: artificial intelligence (AI), machine
+                learning (ML), and deep learning (DL).</p>
+              <div class="flex items-center flex-wrap ">
+                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="https://medium.com/@techgigdotcom/fundamental-concepts-of-ai-machine-learning-and-deep-learning-97c5e3f6a1f8">Read
+                  More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>61
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="mt-40 bg-secondary py-40">
+    <div class="container flex flex-col md:flex-row items-center">
+        <p class="text-gray-500 text-2xl md:text-3xl font-secondary leading-normal">I have always been interested in
+            technological developments. I am happy to discuss together or do a project together, if you are
+            interested please contact me directly via <a class="text-white font-secondary"
+                href="mailto:rezagi66@gmail.com">rezagi66@gmail.com</a>
+        </p>
+        <div class="flex flex-col items-center">
+            <img src="https://malu.im/wp-content/uploads/2018/02/resume2-1.png" alt="">
+            <button class="button-white">DOWNLOAD CV</button>
+        </div>
+    </div>
+</footer>
+<script>
+    function handleNavMenu() {
+        const navMenu = document.querySelector('#navMenu')
+        const isActive = navMenu.classList.contains('flex')
+
+        if (isActive) {
+            navMenu.classList.remove('flex')
+            navMenu.classList.add('hidden')
+        } else {
+            navMenu.classList.add('flex')
+            navMenu.classList.remove('hidden')
+        }
+    }
+
+    const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function () {
+        checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+    });
+</script>
+</body>
+
+</html>

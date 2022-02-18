@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Reza Agi</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="dark:bg-gray-800 dark:text-slate-200">
+    <nav class="nav dark:bg-slate-800">
+        <div class="container flex justify-between mx-auto ">
+            <a href="index.html" class="logo">※</a>
+            <div class="flex justify-center mt-3">
+                <span class="text-gray-800">🔆</span>
+                <input type="checkbox" id="toggle" class="hidden">
+                <label for="toggle">
+                    <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-0.5 cursor-pointer">
+                        <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+                    </div>
+                </label>
+                <span>🌙</span>
+            </div>
+            <button class="relative px-8 logo" onclick="handleNavMenu()"> ≡
+            </button>
+        </div>
+    </nav>
+    <div id="navMenu" class="fixed z-20 left-0 top-0 w-screen h-screen bg-secondary items-center justify-center hidden">
+        <button class="absolute right-16 top-10" onclick="handleNavMenu()">
+            <img class="w-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png"
+                alt="">
+        </button>
+        <ul class="text-white text-center text-5xl font-light space-y-12 tracking-widest">
+            <li><a class="text-gray-400 hover:text-white transition-colors" href="index.html">HOME</a></li>
+            <li><a class="text-gray-400 hover:text-white transition-colors" href="about.html">ABOUT</a></li>
+            <li><a class="text-gray-400 hover:text-white transition-colors" href="blog.html">BLOG</a></li>
+        </ul>
+    </div>
+    <header class="relative container py-24 pt-20 md:mt-24">
+        <div class="relative z-10 space-y-8 py-10">
+            <h1 class="text-6xl md:text-8xl font-secondary font-extrabold">Hello, <br /> I'm Reza Agi.</h1>
+            <div class="text-xl md:text-2xl font-light space-y-2">
+                <div>Application Support</div>
+                <div>Rumah Zakat</div>
+            </div>
+        </div>
+        <img class="md:absolute right-0 top-0 md:w-3/4 md:h-full object-cover"
+            src="images/header.jpg" alt="header">
+    </header>
+    <section id="about" class="container space-y-8 py-24 md:py-52 ">
+        <p style="max-width: 800px;" class="text-2xl font-light">Currently I'm one of the workers in the largest NGO in
+            Indonesia, namely Rumah Zakat as an Application Support. In line with my current position, I like
+            to learn new things related to software development. I hope one day I can become a reliable developer and
+            can build appropriate applications that are useful for many people. </p>
+        <button class="button dark:ring-white dark:border-white dark:text-white  dark:text-bold dark:hover:bg-white dark:hover:text-black transition-colors duration-30">ABOUT ME</button>
+    </section>
+    <section id="project" class="container">
+        <div class="project-wrapper">
+            <a href="https://github.com/rezagi" class="project-item">
+                <div class="project-item-title">
+                    <p>Sales Management</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="images/sales.png"
+                    alt="project1">
+            </a>
+            <a href="https://github.com/rezagi" class="project-item">
+                <div class="project-item-title">
+                    <p>Scholarship Management</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="images/scholar.jpg"
+                    alt="project2">
+            </a>
+            <a href="https://github.com/rezagi" class="project-item">
+                <div class="project-item-title">
+                    <p>Digital Marketing</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="images/sales3.png"
+                    alt="project3">
+            </a>
+            <a href="https://github.com/rezagi" class="project-item">
+                <div class="project-item-title">
+                    <p>Islamic Lifestyle</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="images/islamic.png"
+                    alt="project4">
+            </a>
+            <a href="https://github.com/rezagi" class="project-item">
+                <div class="project-item-title">
+                    <p>Market Place</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="images/marketplace.png"
+                    alt="project5">
+            </a>
+            <a href="https://github.com/rezagi" class="project-item">
+                <div class="project-item-title">
+                    <p>Project Management</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="images/project.png"
+                    alt="project6">
+            </a>
+        </div>
+    </section>
+    <footer class="mt-40 bg-secondary py-40">
+        <div class="container flex flex-col md:flex-row items-center">
+            <p class="text-gray-500 text-2xl md:text-3xl font-secondary leading-normal">I have always been interested in
+                technological developments. I am happy to discuss together or do a project together, if you are
+                interested please contact me directly via <a class="text-white font-secondary"
+                    href="mailto:rezagi66@gmail.com">rezagi66@gmail.com</a>
+            </p>
+            <div class="flex flex-col items-center">
+                <img src="https://malu.im/wp-content/uploads/2018/02/resume2-1.png" alt="">
+                <button class="button-white">DOWNLOAD CV</button>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function handleNavMenu() {
+            const navMenu = document.querySelector('#navMenu')
+            const isActive = navMenu.classList.contains('flex')
+
+            if (isActive) {
+                navMenu.classList.remove('flex')
+                navMenu.classList.add('hidden')
+            } else {
+                navMenu.classList.add('flex')
+                navMenu.classList.remove('hidden')
+            }
+        }
+
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        });
+    </script>
+</body>
+
+</html>
